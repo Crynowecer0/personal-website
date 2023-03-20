@@ -1,57 +1,105 @@
-/* CSS reset would go here, if using one */
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+/* Minimal CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Main Color Variables */
 :root {
-  --main-color: #3B6273;
-  --secondary-color: #FFFFFF;
-  --accent-color: #5F8B70;
-  --main-font-family: sans-serif;
-  --primary-text-color: #444444;
-  --background-color: #5f5f5f;
+  --background: #365b6d;
+  --main-text: #f7f7f7;
+  --accent-text: #f2f1ec;
+  --button-background: #289dd2;
 }
 /* Utility Classes */
 
-.flex {
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+/* general styles */
+body {
+  background-color: var(--background);
+  color: var(--main-text);
+  font-family: "Roboto", sans-serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+/* section styles */
+header {
   display: flex;
-}
-
-.flex-row {
   flex-direction: row;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.space-between {
   justify-content: space-between;
+  padding: 10px;
 }
 
-.space-around {
-  justify-content: space-around;
+nav > a {
+  padding: 25px;
 }
 
-.no-bullets {
-  list-style-type: none;
-}
-
-.border {
-  border: 1px solid black;
-}
 .spacer {
   width: 100%;
-  height: 150px;
+  height: 100px;
 }
 
-/* specific styling */
-body {
-  background-color: var(--main-color);
-  font-family: var(--main-font-family);
+#intro {
+  text-align: center;
 }
 
-.nav-list {
-  width: 20%;
+#intro > h1 {
+  font-size: 56px;
 }
 
+#intro > h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
 
+button {
+  background-color: var(--button-background);
+  color: var(--accent-text);
+  height: 30px;
+  width: 120px;
+  border-radius: 15px;
+}
 
+#about {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.about-content {
+  display: flex;
+  text-align: left;
+}
+
+.headshot {
+  height: 300px;
+  width: 300px;
+  border-radius: 100px;
+}
+
+#projects {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+}
+.contact-list {
+}

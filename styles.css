@@ -102,4 +102,10 @@ button {
   text-align: center;
 }
 .contact-list {
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
